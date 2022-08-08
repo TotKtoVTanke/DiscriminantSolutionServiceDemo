@@ -14,7 +14,6 @@ public class DiscriminantSolutionServiceDefaultImpl implements DiscriminantSolut
 
     @Override
     public Response getSolveEquationRequest(Request request) throws SolveNotFoundException {
-        System.out.println("getSolveEquationRequest +!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
         try{
         Response response = getQuadraticEquationSolve(request);
             if (response.getDiscriminant() < 0) {
